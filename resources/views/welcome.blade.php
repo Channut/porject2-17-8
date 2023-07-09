@@ -157,259 +157,31 @@
 					</div>
 				</div>
 				<div class="row row-padded">
-					<div class="col-md-6">
+					<div class="col-md-12">
 						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-drinks">Box Desing Set</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/size s Box Desing 6 ชิ้น 499.jpg')}}" class="{{ asset('fronPro/img-responsive')}}" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Box Desing (S)</h3>
-											<p>สตรอว์เบอร์รีเคลือบช็อคโกแลต จำนวน 6 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										499 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/M 999-2 Box Desing 12 ชิ้น.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Box Desing (M)</h3>
-											<p>สตรอว์เบอร์รีเคลือบช็อคโกแลต จำนวน 12 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										999 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/1200 -6 Box Desing 12 ชิ้น.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Box Desing (M)</h3>
-											<p>สตรอว์เบอร์รีเคลือบช็อคโกแลต จำนวน 12 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										1,200 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/L 3399-1 Box Desing 35 ชิ้น.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Box Desing (L)</h3>
-											<p>สตรอว์เบอร์รีเคลือบช็อคโกแลต จำนวน 35 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										3,399 บาท
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-dishes">Original Set</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Original Set (banana) 599.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Original Set (Banana)</h3>
-											<p>กล้วยเคลือบช็อกโกแลต จำนวน 4 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										599 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Original Set (ice cream) 999.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Original Set (ice cream)</h3>
-											<p>ไอศกรีม 4 ชิ้น และสตรอว์เบอร์รีเคลือบช็อคโกแลต 3 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										999 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Original Set (Toppin) 999.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Original Set (Toppin)</h3>
-											<p>สตรอว์เบอร์รีเคลือบช็อคโกแลต จำนวน 12 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										999 บาท
-									</div>
-								</li>
 
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Original Set (special) 1200.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Original Set (special)</h3>
-											<p>เค้กสตรอว์เบอร์รี จำนวน 1 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										1,200 บาท
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-drinks">Breakable Chocolate Heart</h2>
 							<ul>
-								<li>
+								@foreach($product as $pro)
+                                <li>
 									<div class="fh5co-food-desc">
 										<figure>
-											<img src="{{ asset('fronPro/images/Breakable Chocolate Heart 1200.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+											<img src="{{ asset('backend/img/img_pro/'.$pro->image)}}" class="{{ asset('fronPro/img-responsive')}}" alt="Free HTML5 Templates by FREEHTML5.co">
 										</figure>
 										<div>
-											<h3>Breakable Chocolate Heart</h3>
-											<p>หัวใจช็อกโกแลต(หัวใจทุบ) จำนวน 1 ชิ้น</p>
+											<h3>{{$pro->name}}</h3>
+											<p>{{$pro->description}}</p>
 										</div>
 									</div>
 									<div class="fh5co-food-pricing">
-										1,200 บาท
+										{{$pro->price}} บาท
 									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Breakable Chocolate Heart .1200.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Breakable Chocolate Heart</h3>
-											<p>หัวใจช็อกโกแลต(หัวใจทุบ) จำนวน 1 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										1,200 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Breakable Chocolate Heart..1200.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Breakable Chocolate Heart</h3>
-											<p>หัวใจช็อกโกแลต(หัวใจทุบ) จำนวน 1 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										1,200 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Breakable Chocolate Heart...1200.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Breakable Chocolate Heart</h3>
-											<p>หัวใจช็อกโกแลต(หัวใจทุบ) จำนวน 1 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										1,200 บาท
-									</div>
-								</li>
+                                    </li>
+
+                                @endforeach
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-dishes">Fancy Set</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Fancy set .999.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Fancy Set</h3>
-											<p>สตรอว์เบอร์รีเคลือบช็อคโกแลตรูปกวางน่ารัก จำนวน 12 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										999 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Fancy set 999.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Fancy Set</h3>
-											<p>สตรอว์เบอร์รีเคลือบช็อคโกแลตรูปแซนต้า จำนวน 12 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										999 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Fancy set..999.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Fancy Set</h3>
-											<p>สตรอว์เบอร์รีเคลือบช็อคโกแลตรูปโลโก้ฮีโร่ จำนวน 12 ชิ้น</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										999 บาท
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="{{ asset('fronPro/images/Fancy set1999.jpg')}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Fancy Set</h3>
-											<p>ชุดสตรอว์เบอร์รีเคลือบช็อคโกแลตคละกัน จำนวน 1 ชุด</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										1,999 บาท
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
+
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4 text-center to-animate-2">
@@ -539,4 +311,3 @@
 
 	</body>
 </html>
-

@@ -54,7 +54,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="index.html" class="app-brand-link">
+                    <a href="{{route('home')}}" class="app-brand-link">
                         <span class="app-brand-logo demo">
                         <img src="{{ asset('backend/assets/img/logoicon.png')}}" alt="">
                         </span>
@@ -106,7 +106,7 @@
 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
 
-                        Admin IT-Shop
+                        Admin love strawberry
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
 

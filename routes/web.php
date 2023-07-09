@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Product;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,14 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome')
+    ->with('product',Product::all());
 });
-Route::get('/product', function () {
-    return view('front_end.product');
-});
-Route::get('/contact', function () {
-    return view('front_end.contact');
-});
+
 
 
 Auth::routes();
